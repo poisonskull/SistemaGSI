@@ -12,5 +12,6 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $this->call("amenaza_seeder");
+        $this->call("noticias_seeder");
     }
 }

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Noticia;
 
 class NoticiasController extends Controller
 {
@@ -18,6 +19,21 @@ class NoticiasController extends Controller
      */
     public function index()
     {
-        return view('noticias');
+
+        $noticias = Noticia::latest()->paginate(5);
+  
+        return view('noticias',compact('noticias'))
+            ->with('i', (request()->input('page', 1) - 1) * 5);
     }
+
+
+    public function destroy(Product $product)
+    {
+        $noticias->delete();
+  
+        return redirect()->route('noticias')
+                        ->with('success','Product deleted successfully');
+    }
+
+    
 }
