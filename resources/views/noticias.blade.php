@@ -19,7 +19,7 @@
         </div>
         <div class="col-md-9">
             <div class="card">
-                <div class="card-header">Catalogo de amenazas</div>
+                <div class="card-header">Catalogo de Noticias</div>
                 <div class="card-body">
                     @if ($message = Session::get('success'))
         <div class="alert alert-success">
@@ -27,15 +27,18 @@
         </div>
 
     @endif
-   
-    <table class="table table-bordered table-hover">
-        <tr>
-            <th>No</th>
-            <th>Nombre</th>
-            <th>Nivel de relacion</th>
-            <th width="230px">Amenazas involucradas</th>
-        </tr>
-        @foreach ($noticias as $noticia)
+
+    <table class="table table-hover">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Nivel de Relación</th>
+      <th scope="col">Amenzas involucradas</th>
+    </tr>
+  </thead>
+  <tbody>
+  @foreach ($noticias as $noticia)
         <tr>
             <td>{{ ++$i }}</td>
             <td>{{ $noticia->nombre }}</td>
@@ -66,7 +69,9 @@
         </tr>
 
         @endforeach
-    </table>
+  </tbody>
+</table>
+
   
     {!! $noticias->links() !!}
 
