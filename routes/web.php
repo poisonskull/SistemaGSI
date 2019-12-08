@@ -29,14 +29,12 @@ Route::get('/activos', 'ActivosController@index')->name('activos');
 
 Route::get('/noticias', 'NoticiasController@index')->name('noticias');
 
-Route::get('/procesos', 'ProcesosController@index')->name('activos');
+Route::get('/procesos', 'ProcesosController@index')->name('procesos');
 
 Route::get('/amenazas', 'AmenazasController@index')->name('amenazas');
 
-Route::get('pruebasAmenazas', function(){
-	$pasteles = Amenaza::where('nivel','3')->get();
-    dd($pasteles);
-});	
+Route::get('/activo_amenaza', 'AmenazasController@activoAmenaza')->name('amenazas');
+
 
 
 

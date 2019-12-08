@@ -13,5 +13,6 @@ class DatabaseSeeder extends Seeder
     {
         $this->call("amenaza_seeder");
         $this->call("noticias_seeder");
+        $this->call("activo_seeder")
     }
 }

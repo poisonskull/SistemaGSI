@@ -30,6 +30,9 @@
                 <a class="btn btn-outline-info my-2 my-sm-1" href="{{ url('home') }}">
                     Home
                 </a>
+                <a class="btn btn-outline-info my-2 my-sm-1" href="{{ url('procesos') }}">
+                    Procesos
+                </a>
                 <a class="btn btn-outline-info my-2 my-sm-1" href="{{ url('activos') }}">
                     Activos TI
                 </a>
@@ -39,9 +42,6 @@
                 <a class="btn btn-outline-info my-2 my-sm-1" href="{{ url('amenazas') }}">
                     Amenazas
                 </a>
-                <a class="btn btn-outline-info my-2 my-sm-1" href="{{ url('procesos') }}">
-                    Procesos
-                </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -49,7 +49,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-
+                        <li>Contend</li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->

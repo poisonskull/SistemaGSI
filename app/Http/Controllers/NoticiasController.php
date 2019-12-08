@@ -4,7 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Noticia;
-
+use App\Amenaza;
+use DB;
 class NoticiasController extends Controller
 {
     public function __construct()
@@ -21,7 +22,18 @@ class NoticiasController extends Controller
     {
 
         $noticias = Noticia::latest()->paginate(5);
-  
+        $amenazas = Amenaza::all();
+       // $articles = DB::table('noticia')
+       //         ->join('amenaza', 'noticia.nivel', '=', 'amenaza.nivel')
+       //         ->select('amenaza.nombre','noticia.nombre','amenaza.nivel')
+       //         ->get();
+       
+        foreach ($noticias as $noticia) {
+            $noticia->amenaza_01 = $amenazas->find($noticia->amenaza_01)->nombre;
+            $noticia->amenaza_02 = $amenazas->find($noticia->amenaza_02)->nombre;
+            $noticia->amenaza_03 = $amenazas->find($noticia->amenaza_03)->nombre;
+
+        }
         return view('noticias',compact('noticias'))
             ->with('i', (request()->input('page', 1) - 1) * 5);
     }
@@ -34,6 +46,5 @@ class NoticiasController extends Controller
         return redirect()->route('noticias')
                         ->with('success','Product deleted successfully');
     }
-
     
 }
