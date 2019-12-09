@@ -22,11 +22,18 @@ class CrearTablaActivo extends Migration
             $table->string('proxima_revision');
             $table->string('datos_responsable');
             $table->string('tel_responsable');
-            $table->float('cyber_percent');            
+            $table->float('cyber_percent',8,2);
             $table->timestamps();
         });
 
-         
+        Schema::create('activo_amenaza', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->bigInteger('amenaza_id')->unsigned();
+            $table->foreign('amenaza_id')->references('id')->on('amenaza');
+            $table->bigInteger('activo_id')->unsigned();
+            $table->foreign('activo_id')->references('id')->on('activo');
+        });
+
     }
 
     /**

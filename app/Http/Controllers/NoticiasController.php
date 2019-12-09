@@ -23,10 +23,7 @@ class NoticiasController extends Controller
 
         $noticias = Noticia::latest()->paginate(5);
         $amenazas = Amenaza::all();
-       // $articles = DB::table('noticia')
-       //         ->join('amenaza', 'noticia.nivel', '=', 'amenaza.nivel')
-       //         ->select('amenaza.nombre','noticia.nombre','amenaza.nivel')
-       //         ->get();
+      
        
         foreach ($noticias as $noticia) {
             $noticia->amenaza_01 = $amenazas->find($noticia->amenaza_01)->nombre;

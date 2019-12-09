@@ -26,6 +26,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/activos', 'ActivosController@index')->name('activos');
+Route::get('/activo_amenaza/{id}', 'ActivosController@getAmenazas')->name('activos');
 
 Route::get('/noticias', 'NoticiasController@index')->name('noticias');
 

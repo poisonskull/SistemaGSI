@@ -8,7 +8,7 @@
                 <div class="card-body">                    
                     <div class="alert alert-success" role="alert">
                         <ul>
-                            <a class="btn btn-info " href="{{ route('amenazas') }}">
+                            <a class="btn btn-info " href="#">
                                 Agregar nueva amenaza
                             </a>
                         </ul>
@@ -28,30 +28,15 @@
    
     <table class="table table-bordered">
         <tr>
-            <th>No</th>
+            <th>{{ $id }}</th>
             <th>Nombre</th>
             <th>Nivel de gravedad</th>
             <th width="280px">Action</th>
         </tr>
-        @foreach ($amenazas as $amenaza)
-        <tr>
-            <td>{{ ++$i }}</td>
-            <td>{{ $amenaza->nombre }}</td>
-            <td>{{ $amenaza->nivel }}</td>
-            <td>
-               
-                    <a class="btn btn-primary" href="#">Editar</a>
-   
-                    @csrf
-                    @method('DELETE')
-      
-                    <button type="submit" class="btn btn-danger">Eliminar</button>
-                           </td>
-        </tr>
-        @endforeach
+       
     </table>
   
-    {!! $amenazas->links() !!}
+
                 </div>
             </div>
         </div>
