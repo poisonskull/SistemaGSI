@@ -142,7 +142,7 @@ class activo_seeder extends Seeder
     	'proxima_revision' => "25/Marzo/2020",
     	'datos_responsable' => "Arturo Jimenez Benites",
     	'tel_responsable' => "5546791645",
-    	'cyber_percent' => 50.0,
+    	'cyber_percent' => 0.0,
            'created_at' => date('Y-m-d H:m:s'),
            'updated_at' => date('Y-m-d H:m:s')
     		));
@@ -154,10 +154,218 @@ class activo_seeder extends Seeder
     	'proxima_revision' => "25/Marzo/2020",
     	'datos_responsable' => "Arturo Jimenez Benites",
     	'tel_responsable' => "5546791645",
-    	'cyber_percent' => 50.0,
+    	'cyber_percent' => 0.0,
            'created_at' => date('Y-m-d H:m:s'),
            'updated_at' => date('Y-m-d H:m:s')
     		));
+
+
+
+/// RELACION ACTIVOS AMENAZAS
+
+    // 1  -->  Estación de trabajo (PC) - Programadores
+        \DB::table('activo_amenaza')->insert(array(
+        'amenaza_id' => 1,'activo_id' => 1, 'created_at' => date('Y-m-d H:m:s'),'updated_at' => date('Y-m-d H:m:s')
+            ));
+         \DB::table('activo_amenaza')->insert(array(
+        'amenaza_id' => 2,'activo_id' => 1, 'created_at' => date('Y-m-d H:m:s'),'updated_at' => date('Y-m-d H:m:s')
+            ));
+          \DB::table('activo_amenaza')->insert(array(
+        'amenaza_id' => 3,'activo_id' => 1, 'created_at' => date('Y-m-d H:m:s'),'updated_at' => date('Y-m-d H:m:s')
+            ));
+           \DB::table('activo_amenaza')->insert(array(
+        'amenaza_id' => 4,'activo_id' => 1, 'created_at' => date('Y-m-d H:m:s'),'updated_at' => date('Y-m-d H:m:s')
+            ));
+            \DB::table('activo_amenaza')->insert(array(
+        'amenaza_id' => 5,'activo_id' => 1, 'created_at' => date('Y-m-d H:m:s'),'updated_at' => date('Y-m-d H:m:s')
+            ));
+    // 2  -->  Plataforma de pagos
+                     \DB::table('activo_amenaza')->insert(array(
+        'amenaza_id' => 6,'activo_id' => 2, 'created_at' => date('Y-m-d H:m:s'),'updated_at' => date('Y-m-d H:m:s')
+            ));
+         \DB::table('activo_amenaza')->insert(array(
+        'amenaza_id' => 4,'activo_id' => 2, 'created_at' => date('Y-m-d H:m:s'),'updated_at' => date('Y-m-d H:m:s')
+            ));
+          \DB::table('activo_amenaza')->insert(array(
+        'amenaza_id' => 7,'activo_id' => 2, 'created_at' => date('Y-m-d H:m:s'),'updated_at' => date('Y-m-d H:m:s')
+            ));
+           \DB::table('activo_amenaza')->insert(array(
+        'amenaza_id' => 9,'activo_id' => 2, 'created_at' => date('Y-m-d H:m:s'),'updated_at' => date('Y-m-d H:m:s')
+            ));
+ 
+    // 3  -->  Base de datos de clientes
+                     \DB::table('activo_amenaza')->insert(array(
+        'amenaza_id' => 10,'activo_id' => 3, 'created_at' => date('Y-m-d H:m:s'),'updated_at' => date('Y-m-d H:m:s')
+            ));
+         \DB::table('activo_amenaza')->insert(array(
+        'amenaza_id' => 11,'activo_id' => 3, 'created_at' => date('Y-m-d H:m:s'),'updated_at' => date('Y-m-d H:m:s')
+            ));
+          \DB::table('activo_amenaza')->insert(array(
+        'amenaza_id' => 12,'activo_id' => 3, 'created_at' => date('Y-m-d H:m:s'),'updated_at' => date('Y-m-d H:m:s')
+            ));
+           \DB::table('activo_amenaza')->insert(array(
+        'amenaza_id' => 13,'activo_id' => 3, 'created_at' => date('Y-m-d H:m:s'),'updated_at' => date('Y-m-d H:m:s')
+            ));
+            \DB::table('activo_amenaza')->insert(array(
+        'amenaza_id' => 9,'activo_id' => 3, 'created_at' => date('Y-m-d H:m:s'),'updated_at' => date('Y-m-d H:m:s')
+            ));
+             
+    // 4  -->  Servidor web - transacciones
+                     \DB::table('activo_amenaza')->insert(array(
+        'amenaza_id' => 9,'activo_id' => 4, 'created_at' => date('Y-m-d H:m:s'),'updated_at' => date('Y-m-d H:m:s')
+            ));
+         \DB::table('activo_amenaza')->insert(array(
+        'amenaza_id' => 14,'activo_id' => 4, 'created_at' => date('Y-m-d H:m:s'),'updated_at' => date('Y-m-d H:m:s')
+            ));
+          \DB::table('activo_amenaza')->insert(array(
+        'amenaza_id' => 4,'activo_id' => 4, 'created_at' => date('Y-m-d H:m:s'),'updated_at' => date('Y-m-d H:m:s')
+            ));
+           \DB::table('activo_amenaza')->insert(array(
+        'amenaza_id' => 15,'activo_id' => 4, 'created_at' => date('Y-m-d H:m:s'),'updated_at' => date('Y-m-d H:m:s')
+            ));
+            \DB::table('activo_amenaza')->insert(array(
+        'amenaza_id' => 16,'activo_id' => 4, 'created_at' => date('Y-m-d H:m:s'),'updated_at' => date('Y-m-d H:m:s')
+            ));
+         
+
+    // 5  -->  TPV
+                     \DB::table('activo_amenaza')->insert(array(
+        'amenaza_id' => 17,'activo_id' => 5, 'created_at' => date('Y-m-d H:m:s'),'updated_at' => date('Y-m-d H:m:s')
+            ));
+         \DB::table('activo_amenaza')->insert(array(
+        'amenaza_id' => 15,'activo_id' => 5, 'created_at' => date('Y-m-d H:m:s'),'updated_at' => date('Y-m-d H:m:s')
+            ));
+          \DB::table('activo_amenaza')->insert(array(
+        'amenaza_id' => 9,'activo_id' => 5, 'created_at' => date('Y-m-d H:m:s'),'updated_at' => date('Y-m-d H:m:s')
+            ));
+           \DB::table('activo_amenaza')->insert(array(
+        'amenaza_id' => 4,'activo_id' => 5, 'created_at' => date('Y-m-d H:m:s'),'updated_at' => date('Y-m-d H:m:s')
+            ));
+            \DB::table('activo_amenaza')->insert(array(
+        'amenaza_id' => 1,'activo_id' => 5, 'created_at' => date('Y-m-d H:m:s'),'updated_at' => date('Y-m-d H:m:s')
+            ));
+    // 6  -->  Equipos Telecomunicaciones
+                     \DB::table('activo_amenaza')->insert(array(
+        'amenaza_id' => 9,'activo_id' => 6, 'created_at' => date('Y-m-d H:m:s'),'updated_at' => date('Y-m-d H:m:s')
+            ));
+         \DB::table('activo_amenaza')->insert(array(
+        'amenaza_id' => 4,'activo_id' => 6, 'created_at' => date('Y-m-d H:m:s'),'updated_at' => date('Y-m-d H:m:s')
+            ));
+          \DB::table('activo_amenaza')->insert(array(
+        'amenaza_id' => 1,'activo_id' => 6, 'created_at' => date('Y-m-d H:m:s'),'updated_at' => date('Y-m-d H:m:s')
+            ));
+           \DB::table('activo_amenaza')->insert(array(
+        'amenaza_id' => 12,'activo_id' => 6, 'created_at' => date('Y-m-d H:m:s'),'updated_at' => date('Y-m-d H:m:s')
+            ));
+            \DB::table('activo_amenaza')->insert(array(
+        'amenaza_id' => 17,'activo_id' => 6, 'created_at' => date('Y-m-d H:m:s'),'updated_at' => date('Y-m-d H:m:s')
+            ));
+            
+    // 7  -->  Sistema operativo
+                     \DB::table('activo_amenaza')->insert(array(
+        'amenaza_id' => 18,'activo_id' => 7, 'created_at' => date('Y-m-d H:m:s'),'updated_at' => date('Y-m-d H:m:s')
+            ));
+         \DB::table('activo_amenaza')->insert(array(
+        'amenaza_id' => 4,'activo_id' => 7, 'created_at' => date('Y-m-d H:m:s'),'updated_at' => date('Y-m-d H:m:s')
+            ));
+          \DB::table('activo_amenaza')->insert(array(
+        'amenaza_id' => 16,'activo_id' => 7, 'created_at' => date('Y-m-d H:m:s'),'updated_at' => date('Y-m-d H:m:s')
+            ));
+           \DB::table('activo_amenaza')->insert(array(
+        'amenaza_id' => 9,'activo_id' => 7, 'created_at' => date('Y-m-d H:m:s'),'updated_at' => date('Y-m-d H:m:s')
+            ));
+            \DB::table('activo_amenaza')->insert(array(
+        'amenaza_id' => 12,'activo_id' => 7, 'created_at' => date('Y-m-d H:m:s'),'updated_at' => date('Y-m-d H:m:s')
+            ));
+             \DB::table('activo_amenaza')->insert(array(
+        'amenaza_id' => 20,'activo_id' => 7, 'created_at' => date('Y-m-d H:m:s'),'updated_at' => date('Y-m-d H:m:s')
+            ));
+             \DB::table('activo_amenaza')->insert(array(
+        'amenaza_id' => 17,'activo_id' => 7, 'created_at' => date('Y-m-d H:m:s'),'updated_at' => date('Y-m-d H:m:s')
+            ));
+    // 8  -->  Aplicación para TPV
+                     \DB::table('activo_amenaza')->insert(array(
+        'amenaza_id' => 21,'activo_id' => 8, 'created_at' => date('Y-m-d H:m:s'),'updated_at' => date('Y-m-d H:m:s')
+            ));
+         \DB::table('activo_amenaza')->insert(array(
+        'amenaza_id' => 4,'activo_id' => 8, 'created_at' => date('Y-m-d H:m:s'),'updated_at' => date('Y-m-d H:m:s')
+            ));
+          \DB::table('activo_amenaza')->insert(array(
+        'amenaza_id' => 7,'activo_id' => 8, 'created_at' => date('Y-m-d H:m:s'),'updated_at' => date('Y-m-d H:m:s')
+            ));
+           \DB::table('activo_amenaza')->insert(array(
+        'amenaza_id' => 9,'activo_id' => 8, 'created_at' => date('Y-m-d H:m:s'),'updated_at' => date('Y-m-d H:m:s')
+            ));
+            \DB::table('activo_amenaza')->insert(array(
+        'amenaza_id' => 12,'activo_id' => 8, 'created_at' => date('Y-m-d H:m:s'),'updated_at' => date('Y-m-d H:m:s')
+            ));
+             
+    // 9  --> Servicio de correo electrónico
+        \DB::table('activo_amenaza')->insert(array(
+        'amenaza_id' => 22,'activo_id' => 9, 'created_at' => date('Y-m-d H:m:s'),'updated_at' => date('Y-m-d H:m:s')
+            ));
+         \DB::table('activo_amenaza')->insert(array(
+        'amenaza_id' => 4,'activo_id' => 9, 'created_at' => date('Y-m-d H:m:s'),'updated_at' => date('Y-m-d H:m:s')
+            ));
+          \DB::table('activo_amenaza')->insert(array(
+        'amenaza_id' => 23,'activo_id' => 9, 'created_at' => date('Y-m-d H:m:s'),'updated_at' => date('Y-m-d H:m:s')
+            ));
+           \DB::table('activo_amenaza')->insert(array(
+        'amenaza_id' => 24,'activo_id' => 9, 'created_at' => date('Y-m-d H:m:s'),'updated_at' => date('Y-m-d H:m:s')
+            ));
+            \DB::table('activo_amenaza')->insert(array(
+        'amenaza_id' => 10,'activo_id' => 9, 'created_at' => date('Y-m-d H:m:s'),'updated_at' => date('Y-m-d H:m:s')
+            ));
+             
+    // 10  -->  Infraestructura eléctrica del centro de datos
+                     \DB::table('activo_amenaza')->insert(array(
+        'amenaza_id' => 4,'activo_id' => 10, 'created_at' => date('Y-m-d H:m:s'),'updated_at' => date('Y-m-d H:m:s')
+            ));
+         \DB::table('activo_amenaza')->insert(array(
+        'amenaza_id' => 25,'activo_id' => 10, 'created_at' => date('Y-m-d H:m:s'),'updated_at' => date('Y-m-d H:m:s')
+            ));
+          \DB::table('activo_amenaza')->insert(array(
+        'amenaza_id' => 2,'activo_id' => 10, 'created_at' => date('Y-m-d H:m:s'),'updated_at' => date('Y-m-d H:m:s')
+            ));
+           \DB::table('activo_amenaza')->insert(array(
+        'amenaza_id' => 26,'activo_id' => 10, 'created_at' => date('Y-m-d H:m:s'),'updated_at' => date('Y-m-d H:m:s')
+            ));
+            \DB::table('activo_amenaza')->insert(array(
+        'amenaza_id' => 27,'activo_id' => 10, 'created_at' => date('Y-m-d H:m:s'),'updated_at' => date('Y-m-d H:m:s')
+            ));
+    // 11 -->  Personal de desarrollo
+                     \DB::table('activo_amenaza')->insert(array(
+        'amenaza_id' => 30,'activo_id' => 11, 'created_at' => date('Y-m-d H:m:s'),'updated_at' => date('Y-m-d H:m:s')
+            ));
+         \DB::table('activo_amenaza')->insert(array(
+        'amenaza_id' => 3,'activo_id' => 11, 'created_at' => date('Y-m-d H:m:s'),'updated_at' => date('Y-m-d H:m:s')
+            ));
+          \DB::table('activo_amenaza')->insert(array(
+        'amenaza_id' => 31,'activo_id' => 11, 'created_at' => date('Y-m-d H:m:s'),'updated_at' => date('Y-m-d H:m:s')
+            ));
+           \DB::table('activo_amenaza')->insert(array(
+        'amenaza_id' => 10,'activo_id' => 11, 'created_at' => date('Y-m-d H:m:s'),'updated_at' => date('Y-m-d H:m:s')
+            ));
+            \DB::table('activo_amenaza')->insert(array(
+        'amenaza_id' => 12,'activo_id' => 11, 'created_at' => date('Y-m-d H:m:s'),'updated_at' => date('Y-m-d H:m:s')
+            ));
+             
+    // 12 -->  Personal de Telecomunicaciones
+        \DB::table('activo_amenaza')->insert(array(
+        'amenaza_id' => 32,'activo_id' => 12, 'created_at' => date('Y-m-d H:m:s'),'updated_at' => date('Y-m-d H:m:s')
+            ));
+         \DB::table('activo_amenaza')->insert(array(
+        'amenaza_id' => 33,'activo_id' => 12, 'created_at' => date('Y-m-d H:m:s'),'updated_at' => date('Y-m-d H:m:s')
+            ));
+          \DB::table('activo_amenaza')->insert(array(
+        'amenaza_id' => 34,'activo_id' => 12, 'created_at' => date('Y-m-d H:m:s'),'updated_at' => date('Y-m-d H:m:s')
+            ));
+           \DB::table('activo_amenaza')->insert(array(
+        'amenaza_id' => 35,'activo_id' => 12, 'created_at' => date('Y-m-d H:m:s'),'updated_at' => date('Y-m-d H:m:s')
+            ));
+            \DB::table('activo_amenaza')->insert(array(
+        'amenaza_id' => 36,'activo_id' => 12, 'created_at' => date('Y-m-d H:m:s'),'updated_at' => date('Y-m-d H:m:s')
+            ));
 		
     }
 }

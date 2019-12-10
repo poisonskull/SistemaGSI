@@ -30,23 +30,20 @@
         <tr>
             <th>No</th>
             <th>Nombre</th>
-            <th>Nivel de gravedad</th>
-            <th width="280px">Action</th>
+            <th>Factor de risgo</th>
+            <th width="180px">Action</th>
         </tr>
         @foreach ($amenazas as $amenaza)
         <tr>
             <td>{{ ++$i }}</td>
             <td>{{ $amenaza->nombre }}</td>
-            <td>{{ $amenaza->nivel }}</td>
+            <td >{{ $amenaza->nivel }}</td>
             <td>
-               
-                    <a class="btn btn-primary" href="#">Editar</a>
-   
-                    @csrf
-                    @method('DELETE')
-      
-                    <button type="submit" class="btn btn-danger">Eliminar</button>
-                           </td>
+            <a class="btn btn-primary" href="#">Editar</a>
+            @csrf
+            @method('DELETE')
+            <button type="submit" class="btn btn-danger">Eliminar</button>
+        </td>
         </tr>
         @endforeach
     </table>

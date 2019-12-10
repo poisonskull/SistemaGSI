@@ -26,7 +26,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/activos', 'ActivosController@index')->name('activos');
-Route::get('/activo_amenaza/{id}', 'ActivosController@getAmenazas')->name('activos');
+Route::get('/activo_amenaza/{id}/{nombre}', 'ActivosController@getAmenazas')->name('activos');
 
 Route::get('/noticias', 'NoticiasController@index')->name('noticias');
 
@@ -34,7 +34,17 @@ Route::get('/procesos', 'ProcesosController@index')->name('procesos');
 
 Route::get('/amenazas', 'AmenazasController@index')->name('amenazas');
 
-Route::get('/activo_amenaza', 'AmenazasController@activoAmenaza')->name('amenazas');
+Route::get('/politica_general', 'PoliticaController@index')->name('politica');
+
+Route::get('/politica_especifica', 'PoliticaController@especifica')->name('politica');
+
+Route::get('/politica_aplicacion', 'PoliticaController@aplicacion')->name('politica');
+
+Route::get('/activos_switch', 'ActivosController@activos_switch')->name('acivos');
+
+Route::get('/control_asociado', 'PoliticaController@control')->name('acivos');
+
+//Route::get('/activo_amenaza', 'AmenazasController@activoAmenaza')->name('amenazas');
 
 
 

@@ -44,9 +44,10 @@
                                             <li class="list-group-item"><b>Última Actualización: </b> {{ $activo->ultima_actualizacion }}</li>
                                             <li class="list-group-item"><b>Último incidente: </b>{{ $activo->ultimo_incidente }}</li>
                                             <li class="list-group-item"><b>Próxima revisión: </b>{{ $activo->proxima_revision }}</li>
+                                            <li class="list-group-item"><b>Porcentaje de dependencia externa: </b>{{ $activo->cyber_percent }}%</li>
                                             <li class="list-group-item"><b>Responsable del activo: </b> {{ $activo->datos_responsable }} <b>Teléfono: </b><a
                                                     href="tel:{{ $activo->tel_responsable }}">Llamar({{ $activo->tel_responsable }})</a> </li>
-                                            <li class="list-group-item"><a href="activo_amenaza/{{ $activo->id }}"> Amenazas asociadas</a>
+                                            <li class="list-group-item"><a href="activo_amenaza/{{ $activo->id }}/{{ $activo->nombre}}"> Amenazas asociadas</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -54,6 +55,8 @@
                             </div>
 
                         @endforeach
+
+                          {!! $activos->links() !!}
                         </div>
                     </div>
                 </div>

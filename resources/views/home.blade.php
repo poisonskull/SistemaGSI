@@ -5,16 +5,21 @@
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
             <h1 class="display-4">PROZA</h1><img src="/assets/logo.png">
-            <p class="lead">Hacer posible el uso de soluciones compartidas en tiempo y forma.
+            <p class="lead">Ser el procesador de transacciones financieras más confiable, seguro y eficiente de México, ofreciendo soporte a la red de comercios y ATM’s de nuestros clientes y desarrollando soluciones tecnológicas a la medida para estar a la vanguardia en medios de pago.
             </p>
         </div>
     </div>
     <div class="row justify-content-center">
         <div class="row">
             <div class="col-md-4">
-                <h2>Misión</h2>
-                <p>Mantener la confidencialidad, integridad y disponibilidad de la información que maneja PROZA, garantizando los niveles de seguridad que hoy en día son demandados para operar con un riesgo gestionado mediante la aplicación de controles de seguridad vanguardistas en todos los procesos y servicios que brinda PROZA.</p>
-                <!-- <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p> -->
+                <h2>Misión seguridad</h2>
+                <p>Mantener la disponibilidad, confidencialidad e integridad de las transacciones financieras de nuestros clientes, aplicando controles de seguridad a medida en los procesos críticos de Proza.</p>
+                <a class="btn btn-outline-info my-2 my-sm-1" href="{{ url('procesos') }}">
+                    Ir a proceso críticos
+                </a>
+                <a class="btn btn-outline-info my-2 my-sm-1" href="{{ url('politica_general') }}">
+                    Ver políticas
+                </a>
             </div>
             <div class="col-md-4">
                 <h2>CONTACTOS DE EMERGENCIA</h2>

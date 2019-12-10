@@ -7,18 +7,18 @@
             <div class="card">
                 <div class="card-body">                    
                     <div class="alert alert-success" role="alert">
-                        <ul>
+                    
                             <a class="btn btn-info " href="#">
-                                Agregar nueva amenaza
+                                Agregar amenaza
                             </a>
-                        </ul>
+                       
                     </div>
                 </div>
             </div>
         </div>
         <div class="col-md-9">
             <div class="card">
-                <div class="card-header">Catalogo de amenazas</div>
+                <div class="card-header">Amenazas para {{ $nombre }}</div>
                 <div class="card-body">
                     @if ($message = Session::get('success'))
         <div class="alert alert-success">
@@ -28,13 +28,29 @@
    
     <table class="table table-bordered">
         <tr>
-            <th>{{ $id }}</th>
-            <th>Nombre</th>
-            <th>Nivel de gravedad</th>
-            <th width="280px">Action</th>
+            <th>Amenaza</th>
+            <th>Factor de riesgo</th>
+            <th>Control</th>
+            <th width="180px">Action</th>
         </tr>
-       
+        @foreach ($amenazas as $amenaza)
+        <tr>
+            <td>{{ $amenaza->nombre }}</td>
+            <td>{{ $amenaza->nivel }}</td>
+            <td>{{ $amenaza->control }}</td>
+            <td>
+               
+                    <a class="btn btn-primary" href="#">Editar</a>
+   
+                    @csrf
+                    @method('DELETE')
+      
+                    <button type="submit" class="btn btn-danger">Eliminar</button>
+                           </td>
+        </tr>
+        @endforeach
     </table>
+  
   
 
                 </div>

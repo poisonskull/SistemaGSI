@@ -16,7 +16,8 @@ class CrearTablaAmenaza extends Migration
         Schema::create('amenaza', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('nombre');
-            $table->enum('nivel',[1,2,3,4,5]);
+            $table->integer('nivel');
+            $table->string('control')->default("N/A");
             $table->timestamps();
         });
     }

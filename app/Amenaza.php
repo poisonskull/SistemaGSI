@@ -9,6 +9,6 @@ class Amenaza extends Model
 	protected $table = 'amenaza';
 	
     protected $fillable =[
-    	'nombre','nivel'	
+    	'nombre','nivel','control'	
     ];
 }

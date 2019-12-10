@@ -32,6 +32,7 @@ class CrearTablaActivo extends Migration
             $table->foreign('amenaza_id')->references('id')->on('amenaza');
             $table->bigInteger('activo_id')->unsigned();
             $table->foreign('activo_id')->references('id')->on('activo');
+            $table->timestamps();
         });
 
     }
